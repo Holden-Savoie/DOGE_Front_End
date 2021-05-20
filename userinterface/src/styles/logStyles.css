@@ -2,7 +2,18 @@
     --customBlue: #3490DC;
     --customLightBlue: #61dafb;
 }
+
 #space{
     height: 100vh;
     background: url(../imgs/empty-space.jpg);
+}
+
+h1{
+    color:white
+}
+
+#doge{
+    height: 250px;
+    width: 500px;
+    position: absolute;
 }

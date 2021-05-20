@@ -32,7 +32,8 @@ export default function Dashboard(props) {
             <div>
             <h1 id="price">{price}</h1>
             <button class="launch-button">To the Moon!</button>  
-            <img src={dogerocketboi} alt="dogerocketboi.png" width="400vw"  height="200vh" ></img>
+            <img id="doge" style={{bottom: (price*100-15)+"vh", left: (price*100-20)+"vw"}}
+            src={dogerocketboi} alt="dogerocketboi.png" ></img>
             </div>
         </div>
         
