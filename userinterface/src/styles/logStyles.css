@@ -2,3 +2,7 @@
     --customBlue: #3490DC;
     --customLightBlue: #61dafb;
 }
+#space{
+    height: 100vh;
+    background: url(../imgs/empty-space.jpg);
+}
