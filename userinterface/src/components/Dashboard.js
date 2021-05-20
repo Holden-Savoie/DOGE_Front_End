@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import * as Constants from './constants';
+import dogerocketboi from "../imgs/doge-rocket-boi.png"
+
 export default function Dashboard(props) {
     const [price, setPrice] = useState(0.0000);
     useEffect(() => {
@@ -23,17 +25,14 @@ export default function Dashboard(props) {
     }
 
     return (
-        <div>
+        <div id="space"> 
+            <h1><em>Dogecoin Price Tracker</em></h1>
+            <div>
             <h1 id="price">{price}</h1>
-            <button class="launch-button">To the Moon!</button>
-
-            <div class="rocket-container">
-                <div class="canvas-container">
-                    {/* <canvas id="rocket-canvas" height="680" width="400">
-                        Doge is not supported, sorry...
-                    </canvas> */}
-                </div>
+            <button class="launch-button">To the Moon!</button>  
+            <img src={dogerocketboi} alt="dogerocketboi.png" width="400vw"  height="200vh" ></img>
             </div>
         </div>
+        
     );
 }
