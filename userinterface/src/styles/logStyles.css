@@ -16,4 +16,11 @@ h1{
     height: 250px;
     width: 500px;
     position: absolute;
+    color: antiquewhite;
+}
+
+#moon{
+    position: absolute;
+    top: 0%;
+    right: 0%;
 }
