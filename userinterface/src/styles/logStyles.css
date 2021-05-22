@@ -4,7 +4,7 @@
 }
 
 #space{
-    height: 100vh;
+    height: 150vh;
     background: url(../imgs/empty-space.jpg);
 }
 
@@ -15,15 +15,24 @@ h1, h3{
 #doge{
     /* height: 150px;
     width: 300px; */
-    height: 12vh;
-    width: 24vh;
+    height: 15vh;
+    width: 30vh;
     z-index: 3;
     position: relative;
     transform: translate(50%,-50%);
 }
 
+#statusChange{
+    z-index: 3;
+    position: relative;
+    transform: translate(100%,-50%);
+    width: fit-content;
+    margin: 0;
+    background-color: white;
+}
+
 #titleInfo{
-    display: none;
+    /* display: none; */
     position: fixed;
     right: 50%;
     transform: translate(50%,0%);
@@ -53,14 +62,17 @@ h1, h3{
 }
 
 #one{
-    bottom: 99.5%;
+    bottom: 87.5%;
 }
 #threeQuarters{
-    bottom: 75%;
+    /* bottom: 75%; */
+    bottom: 50%;
 }
 #half{
-    bottom: 50%;
+    /* bottom: 50%; */
+    bottom: 12.5%;
     }
 #oneQuarter{
-    bottom: 25%;
+    /* bottom: 25%; */
+    bottom: -25%;
 }
