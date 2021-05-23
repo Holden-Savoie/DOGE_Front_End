@@ -8,7 +8,7 @@ export default function Routes(props) {
                 <Router>
                     <Switch style={{zIndex: "9"}}>
                         <Route path="/">
-                            <Dashboard />
+                            <Dashboard price={props.price}  />
                         </Route>
                     </Switch>
                 </Router>
