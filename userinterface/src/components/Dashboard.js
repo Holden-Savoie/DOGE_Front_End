@@ -8,8 +8,18 @@ import "../styles/logStyles.css"
 export default function Dashboard(props) {
     const [price, setPrice] = useState(0.0000);
     const [diff, setDiff] = useState(0.0000);
+    const [hasScrolled, setHasScrolled] = useState(false);
+    const element = document.getElementById("doge");
     let top = (150 - props.price * 150 + 15);
     let left = (props.price > .2) ? (props.price * 100 - 30) : -10;
+
+    if (hasScrolled == false && element) {
+        window.scrollTo({
+            behavior: element ? "smooth" : "auto",
+            top: element ? element.offsetTop : 0,
+        });
+        setHasScrolled(true);
+    }
 
     useEffect(() => {
         if (props.price != price) {
